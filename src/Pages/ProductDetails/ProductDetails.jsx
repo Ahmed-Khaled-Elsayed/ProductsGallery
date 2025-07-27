@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaCartPlus, FaStar, FaStarHalfAlt } from "react-icons/fa";
-import img from "../../assets/images/slider-image-3.jpeg";
 import { RiMoneyPoundCircleLine } from "react-icons/ri";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { useNavigate, useParams } from "react-router-dom";

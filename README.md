@@ -16,13 +16,21 @@ This project is a **Products Gallery** built with React and Tailwind CSS. It fea
 
 ### 🔦 Light Mode
 ![Light Mode](./src/assets/images/screenshots/light%20home1.png)
+
+
 ![Light Mode](./src/assets/images/screenshots/light%20home2.png)
+
+
 ![Light Mode](./src/assets/images/screenshots/light%20details.png)
 
 
 ### 🌙 Dark Mode
 ![Dark Mode](./src/assets/images/screenshots/dark%20home1.png)
+
+
 ![Dark Mode](./src/assets/images/screenshots/dark%20home2.png)
+
+
 ![Dark Mode](./src/assets/images/screenshots/dark%20details.png)
 
 
