@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Pages/Layout/Layout";
 import Products from "./Pages/Products/Products";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
