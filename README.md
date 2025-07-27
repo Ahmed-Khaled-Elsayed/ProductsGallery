@@ -1,12 +1,43 @@
-# React + Vite
+# 🛍️ ProStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Project Overview
 
-Currently, two official plugins are available:
+This project is a **Products Gallery** built with React and Tailwind CSS. It features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time search and sort functionality
+- Product display with beautiful cards
+- Loading state handling using `react-spinners`
+- Data fetching using `react-query` and `axios`
+- Dark mode support with Tailwind
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+### 🔦 Light Mode
+![Light Mode](./src/assets/images/screenshots/light%20home1.png)
+![Light Mode](./src/assets/images/screenshots/light%20home2.png)
+![Light Mode](./src/assets/images/screenshots/light%20details.png)
+
+
+### 🌙 Dark Mode
+![Dark Mode](./src/assets/images/screenshots/dark%20home1.png)
+![Dark Mode](./src/assets/images/screenshots/dark%20home2.png)
+![Dark Mode](./src/assets/images/screenshots/dark%20details.png)
+
+
+
+---
+
+## 🧱 Tech Stack Used
+
+| Tool/Library         | Description                              |
+|----------------------|------------------------------------------|
+| React                | Frontend library                         |
+| Tailwind CSS         | Utility-first CSS framework              |
+| Axios                | Promise-based HTTP client                |
+| React Query          | Data fetching and caching                |
+| React Icons          | Icon support                             |
+| React Spinners       | Beautiful loading spinners               |
+
+
