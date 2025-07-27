@@ -63,7 +63,7 @@ console.log(data)
 
   return (
     <>
-    {!isLoading ?(<div className="w-[90%] mx-auto ">
+    {!isLoading ?(<div className="w-[90%] mx-auto dark:bg-gray-900">
 
       <div className="text-center py-12">
         <h1 className="text-4xl font-bold text-blue-500">Discover Amazing Products</h1>
@@ -82,7 +82,7 @@ console.log(data)
         </div>
         <input
           type="search"
-          className="block w-full px-4 py-3 pl-10 text-sm border border-gray-300 rounded-lg bg-gray-50 focus:outline-blue-500"
+          className="block w-full px-4 py-3 pl-10 text-sm border border-gray-300 rounded-lg bg-gray-50 focus:outline-blue-500 dark:bg-gray-800 dark:text-white"
           placeholder="Search Products"
           onChange={handleSearchChange}
         />
@@ -93,13 +93,13 @@ console.log(data)
   <div className="flex flex-col md:flex-row md:items-center gap-2 w-full md:w-auto">
     <label
       htmlFor="sort"
-      className="font-bold text-gray-700 flex items-center gap-1"
+      className="font-bold text-gray-700 flex items-center gap-1 dark:text-white"
     >
       <BsSortUp size={20} /> Sort by:
     </label>
     <select
       id="sort"
-      className="w-full md:w-auto px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 focus:outline-blue-500"
+      className="w-full md:w-auto px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 focus:outline-blue-500 dark:bg-gray-800 dark:text-white"
       onChange={handleSortChange}
     >
       <option value="name-asc">Name (A-Z)</option>

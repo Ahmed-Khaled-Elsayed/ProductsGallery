@@ -48,7 +48,7 @@ function ProductDetails() {
         Return to Products
       </button>
 
-      <div className="flex flex-col h-fit lg:flex-row gap-8 bg-white p-6 rounded-xl shadow-md">
+      <div className="flex flex-col h-fit lg:flex-row gap-8 bg-white p-6 rounded-xl shadow-md dark:bg-gray-800 ">
         <div className="lg:w-1/2 w-full ">
           <img
             src={data?.image}
@@ -60,8 +60,8 @@ function ProductDetails() {
         <div className="lg:w-1/2 w-full flex flex-col justify-between">
           <div>
             <div className="flex justify-between items-center mb-3">
-              <h1 className="text-3xl font-bold text-gray-800">{data?.title.split(" ").slice(0,3).join(" ")}</h1>
-              <span className="text-lg px-3 py-1 rounded-2xl border border-gray-300 text-center text-gray-600">
+              <h1 className="text-3xl font-bold text-gray-800 dark:text-white">{data?.title.split(" ").slice(0,3).join(" ")}</h1>
+              <span className="text-lg px-3 py-1 rounded-2xl border border-gray-300 text-center text-gray-600 dark:text-gray-400">
                 {data?.category}              
                 </span>
             </div>
@@ -73,16 +73,16 @@ function ProductDetails() {
                 ))}
 
                 {getGoldStars(data?.rating.rate).half === 1 && (
-                  <FaStarHalfAlt  className="text-yellow-400" size={20} />
+                  <FaStarHalfAlt  className="text-yellow-400 " size={20} />
                 )}
 
                 {[...Array(getGoldStars(data?.rating.rate).empty)].map(() => (
-                  <FaStar className="text-gray-300" size={20} />
+                  <FaStar className="text-gray-300 dark:text-gray-500" size={20} />
                 ))}
               </div>:""}
               
 
-              <span className="text-xl font-medium">{data?.rating.rate}</span>
+              <span className="text-xl font-medium dark:text-gray-300">{data?.rating.rate}</span>
               <span className="text-gray-500">({data?.rating.count} reviews)</span>
             </div>
 
@@ -92,18 +92,18 @@ function ProductDetails() {
             </div>
 
             <div className="border-y border-y-gray-300 py-4">
-              <h2 className="text-lg font-semibold mb-2">Description</h2>
-              <p className="text-gray-600">
+              <h2 className="text-lg font-semibold mb-2 dark:text-white">Description</h2>
+              <p className="text-gray-600 dark:text-gray-400">
                 {data?.description}
               </p>
             </div>
 
                 
                 <div className=" border border-gray-300 w-fit p-1 rounded-lg mx-auto mt-5">
-                  <button className="w-7  h-8 cursor-pointer hover:bg-blue-100   rounded-lg text-center "
+                  <button className="w-7  h-8 cursor-pointer hover:bg-blue-100   rounded-lg text-center dark:text-white dark:hover:bg-blue-500"
                   onClick={()=>{setCounter(counter-1)}}>-</button>
-                  <input type="text" value={counter}  className="w-10 text-center"/>
-                  <button className="w-7  h-8 cursor-pointer hover:bg-blue-100   rounded-lg text-center "
+                  <input type="text" value={counter}  className="w-10 text-center dark:text-white"/>
+                  <button className="w-7  h-8 cursor-pointer hover:bg-blue-100   rounded-lg text-center dark:text-white dark:hover:bg-blue-500"
                   onClick={()=>{setCounter(counter+1)}}>+</button>
                 </div>
 
