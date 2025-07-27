@@ -7,7 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 function App() {
   const queryClient = new QueryClient();
 
-  const route = createBrowserRouter([
+  const route = createHashRouter([
     {
       path: "",
       element: <Layout />,
